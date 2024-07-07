@@ -1,0 +1,35 @@
+git config user.name "ehsan" امضای من روی پروژه ها
+git config --global user.name "ehsan" امضای من روی همه پروژه های روی سیستم
+git config user.email "e.aalami324@gmail.com"
+git config --global user.email.com "e.aalami324@gamil.com"
+git config --list 
+git init ساختن فایل .git
+
+git add <file> اضافه کردن فایل به گیت
+git add --all / git add . اضافه کردن همه فایل ها به گیت
+git commit -m"<your message>" ثبت نهایی در پروژه
+git restore --staged <file> بیرون کشیدن فایل های پروژه از گیت
+
+git log لیست تمامی کامیت های پروژه رو نشون میده
+git log --oneline لیست کامیت های پروژه به صورت تک خطی
+git log --stat لیست کامیت های پروژه به جزئیات بیشتر
+
+git branch (--list) لیست برنچ های پروژه
+git branch <branchname> ساختن برنچ جدید
+git checkout <branchname> سوییچ کردن روی برنچ دیگه
+git merge <branchname> ادغام برنچ با برنچ فعلی
+git branch -m <old branch> <new branch> تغییر اسم برنچ
+git branch -d <branch> پاک کردن برنچ
+git branch -D <branch> پاک کردن برنچ هایی که مرج نشده اند
+نکته: اگه تغییری روی برنچی ایجاد کردی باید حتما کامیت بزنین، وگرنه روی بقیه برنچ ها هم میرود
+
+git checkout 124575 عدد 124575رو میشه از روی لاگ ها بدست آورد
+git branch <new branch> 124575 ساخت برنچ جدید 
+در دو دستور بالا ما به نسخه های قبلی بر میگردیم ولی امکان تغییر نداریم. صرفا برای خواندن کد های قبلی استفااده میشه
+
+git revert 124575 برای رفتن به آخرین کامیت از این دستور استفاده میشه
+اگه بخوایم به کامیت های وسط بریم باید از دستور دیگه ای استفاده کنیم
+
+git log 124575 --soft تا مرحله کامیت میاد عقب
+git log 124575 --mixed تا مرحله اد میاد عقب
+git log 124575 --hard کلا فایل ها رو پاک میکنه
