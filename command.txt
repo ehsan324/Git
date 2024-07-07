@@ -61,3 +61,11 @@ git checkout -b <file>
 git push origin <branch>
 
 #12_issues video we learned how to have relationship with owner or others
+
+#13_README.md video description. see also markdown video. search in mongard
+
+#14_fork video
+
+#15_merge_conflict video
+
+#16_github_conflict video
