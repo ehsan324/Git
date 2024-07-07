@@ -33,3 +33,31 @@ git revert 124575 برای رفتن به آخرین کامیت از این دس�
 git log 124575 --soft تا مرحله کامیت میاد عقب
 git log 124575 --mixed تا مرحله اد میاد عقب
 git log 124575 --hard کلا فایل ها رو پاک میکنه
+
+
+touch .gitignore
+#open the .gitignore
+#add all files that you want to ignore
+#in there is a directory, write like this <example/>
+git add .gitignore
+git commit 
+
+#in 9_github video we learned how to connect to github
+
+#add new repo to github
+#create new repo in github
+#copy path of it
+git branch -M main
+git push <path> main 	
+
+#update repo with remote
+git remote add origin <path> 
+git push origin main
+
+#git branch and checkout together
+git checkout -b <file>
+
+#push with other branch
+git push origin <branch>
+
+#12_issues video we learned how to have relationship with owner or others
